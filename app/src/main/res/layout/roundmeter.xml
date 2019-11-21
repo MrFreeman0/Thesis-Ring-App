@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/roundmeter_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/simple_bg" />
+
+    <ImageView
+        android:id="@+id/roundmeter_tophand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-45"
+        android:src="@drawable/simple_tophand" />
+
+    <ImageView
+        android:id="@+id/roundmeter_bottomhand"
+        android:rotation="45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/simple_bottomhand" />
+
+    <ImageView
+        android:id="@+id/roundmeter_centerknob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/simple_centerknob" />
+</FrameLayout>

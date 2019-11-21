@@ -1,0 +1,3 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="from_camera" path="Android/data/fi.delektre.ringa.ring_thesis/files/Pictures" />
+</paths>

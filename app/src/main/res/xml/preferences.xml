@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="@string/default_user_id"
+        android:key="edit_text_preference_1"
+        android:singleLine="true"
+        android:summary="@string/default_user_id"
+        android:title="@string/label_pref_user_email" />
+    <PreferenceCategory android:title="@string/label_pref_group_tools">
+        <Preference
+            android:title="@string/label_pref_btn_reset"
+            android:key="@string/key_pref_reset_button"
+            android:summary="@string/summary_pref_btn_reset"
+            android:widgetLayout="@layout/pref_reset_button"/>
+        <Preference
+            android:title="@string/label_pref_btn_calibrate"
+            android:key="@string/key_pref_calibrate_button"
+            android:summary="@string/summary_pref_btn_calibrate"
+            android:widgetLayout="@layout/pref_calibrate_button"/>
+        <Preference
+            android:title="@string/label_pref_btn_reboot"
+            android:key="@string/key_pref_logout_button"
+            android:summary="@string/summary_pref_btn_logout"
+            android:widgetLayout="@layout/pref_logout_button" />
+        <Preference
+            android:title="@string/label_change_user"
+            android:key="@string/key_pref_change_user"
+            android:summary="@string/summary_pref_btn_reset" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/label_pref_group_battery">
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="@string/default_user_id"
+            android:key="edit_text_preference_2"
+            android:singleLine="true"
+            android:summary="@string/default_user_id"
+            android:title="@string/label_pref_user_email" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="@string/key_enable_sync"
+            android:title="@string/label_enable_sync" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="@string/key_enable_location"
+            android:title="@string/label_enable_location" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/label_pref_group_pwm">
+        <EditTextPreference
+            android:contentDescription="testi"
+            android:defaultValue="255"
+            android:inputType="number"
+            android:key="@string/key_led_red"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/label_pref_led_red" />
+        <EditTextPreference
+            android:defaultValue="255"
+            android:inputType="number"
+            android:key="@string/key_led_green"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/label_pref_led_green" />
+
+        <EditTextPreference
+            android:defaultValue="255"
+            android:inputType="number"
+            android:key="@string/key_led_blue"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/label_pref_led_blue" />
+
+        <EditTextPreference
+            android:defaultValue="255"
+            android:inputType="number"
+            android:key="@string/key_led_yellow"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/label_pref_led_yellow" />
+        <EditTextPreference
+            android:defaultValue="255"
+            android:inputType="number"
+            android:key="@string/key_led_nir"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/label_pref_led_nir" />
+        <EditTextPreference
+            android:defaultValue="255"
+            android:inputType="number"
+            android:key="@string/key_led_uva"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/label_pref_led_uva" />
+        <EditTextPreference
+            android:defaultValue="255"
+            android:inputType="number"
+            android:key="@string/key_led_uvb"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/label_pref_led_uvb" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/textViewSpinnerItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:paddingStart="8dp"
+    android:drawableRight="@drawable/ic_sharp_arrow_drop_down_24px"
+    style="@style/SpinnerGenderStyling"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,443 @@
+@startuml
+
+title __APP's Class Diagram__\n
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.BuildConfig {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.LoginActivity {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.LoginActivity_ {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.MainActivity {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.MainActivity_ {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.ProfileActivity {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.ProfileActivity_ {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.RecyclerSelectorView {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.RecyclerSelectorView_ {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.SettingsActivity {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.SettingsActivity_ {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.UserData {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.UserData_ {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.UserHistory {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.UserHistory_ {
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace adapters {
+      abstract class fi.delektre.ringa.ring_thesis.adapters.RecyclerViewAdapterBase {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace adapters {
+      class fi.delektre.ringa.ring_thesis.adapters.SectionStatePagerAdapter {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace adapters {
+      class fi.delektre.ringa.ring_thesis.adapters.SelectorRecyclerViewAdapter {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace adapters {
+      class fi.delektre.ringa.ring_thesis.adapters.SelectorRecyclerViewAdapter_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace adapters {
+      class fi.delektre.ringa.ring_thesis.adapters.ViewWrapper {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace constants {
+      class fi.delektre.ringa.ring_thesis.constants.AppConst {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace data {
+      class fi.delektre.ringa.ring_thesis.data.RxBus {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace service {
+      class fi.delektre.ringa.ring_thesis.service.BLE_ConnectionCheck {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace service {
+      class fi.delektre.ringa.ring_thesis.service.BLE_Service {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace service {
+      class fi.delektre.ringa.ring_thesis.service.BLE_Service_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.DatePickerDialog {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.DatePickerDialog_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog_ {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.AppBarTransparentScrollingViewBehavior {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      abstract class fi.delektre.ringa.ring_thesis.util.BasicActivity {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.ChartUtils {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.DataType {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.FirebasePersistence {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.LineDataCollection {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.RetryWithDelay {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.SelectorOption {
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.UserDataCollection {
+      }
+    }
+  }
+  
+
+  fi.delektre.ringa.ring_thesis.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.LoginActivity_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.LoginActivity_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.LoginActivity_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.LoginActivity_ -up-|> fi.delektre.ringa.ring_thesis.LoginActivity
+  fi.delektre.ringa.ring_thesis.MainActivity -up-|> fi.delektre.ringa.ring_thesis.util.BasicActivity
+  fi.delektre.ringa.ring_thesis.MainActivity o-- fi.delektre.ringa.ring_thesis.adapters.SelectorRecyclerViewAdapter : adapter
+  fi.delektre.ringa.ring_thesis.MainActivity_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.MainActivity_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.MainActivity_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.MainActivity_ -up-|> fi.delektre.ringa.ring_thesis.MainActivity
+  fi.delektre.ringa.ring_thesis.ProfileActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.ProfileActivity_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.ProfileActivity_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.ProfileActivity_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.ProfileActivity_ -up-|> fi.delektre.ringa.ring_thesis.ProfileActivity
+  fi.delektre.ringa.ring_thesis.RecyclerSelectorView -up-|> androidx.appcompat.widget.LinearLayoutCompat
+  fi.delektre.ringa.ring_thesis.RecyclerSelectorView_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.RecyclerSelectorView_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.RecyclerSelectorView_ -up-|> fi.delektre.ringa.ring_thesis.RecyclerSelectorView
+  fi.delektre.ringa.ring_thesis.SettingsActivity -up-|> android.preference.PreferenceActivity
+  fi.delektre.ringa.ring_thesis.SettingsActivity_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.SettingsActivity_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.SettingsActivity_ -up-|> fi.delektre.ringa.ring_thesis.SettingsActivity
+  fi.delektre.ringa.ring_thesis.UserData -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserBirthday : userBirthdayCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserGender : userGenderCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserHeight : userHeightCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserName : userNameCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserWeight : userWeighthCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.adapters.SectionStatePagerAdapter : mSectionStateAdapter
+  fi.delektre.ringa.ring_thesis.UserData_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.UserData_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.UserData_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.UserData_ -up-|> fi.delektre.ringa.ring_thesis.UserData
+  fi.delektre.ringa.ring_thesis.UserHistory -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.UserHistory_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.UserHistory_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.UserHistory_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.UserHistory_ -up-|> fi.delektre.ringa.ring_thesis.UserHistory
+  fi.delektre.ringa.ring_thesis.adapters.RecyclerViewAdapterBase -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  fi.delektre.ringa.ring_thesis.adapters.SectionStatePagerAdapter -up-|> androidx.fragment.app.FragmentStatePagerAdapter
+  fi.delektre.ringa.ring_thesis.adapters.SelectorRecyclerViewAdapter -up-|> fi.delektre.ringa.ring_thesis.adapters.RecyclerViewAdapterBase
+  fi.delektre.ringa.ring_thesis.adapters.SelectorRecyclerViewAdapter_ -up-|> fi.delektre.ringa.ring_thesis.adapters.SelectorRecyclerViewAdapter
+  fi.delektre.ringa.ring_thesis.adapters.ViewWrapper -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  fi.delektre.ringa.ring_thesis.adapters.ViewWrapper o-- V : view
+  fi.delektre.ringa.ring_thesis.service.BLE_ConnectionCheck -up-|> android.content.BroadcastReceiver
+  fi.delektre.ringa.ring_thesis.service.BLE_Service -up-|> android.app.Service
+  fi.delektre.ringa.ring_thesis.service.BLE_Service o-- fi.delektre.ringa.ring_thesis.util.LineDataCollection : parseData
+  fi.delektre.ringa.ring_thesis.service.BLE_Service o-- fi.delektre.ringa.ring_thesis.service.BLE_ConnectionCheck : BLE_ConnetionCheck
+  fi.delektre.ringa.ring_thesis.service.BLE_Service_ -up-|> fi.delektre.ringa.ring_thesis.service.BLE_Service
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment -up-|> androidx.fragment.app.Fragment
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserBirthday : userBirthdayCollection
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserHeight : userHeightCollection
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserWeight : userWeigthCollection
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment_ -up-|> fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment -up-|> androidx.fragment.app.Fragment
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment_ -up-|> fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog .up.|> android.view.View.OnClickListener
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog -up-|> androidx.fragment.app.DialogFragment
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog_ -up-|> fi.delektre.ringa.ring_thesis.ui.DatePickerDialog
+  fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog -up-|> androidx.fragment.app.DialogFragment
+  fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog_ -up-|> fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog .up.|> android.view.View.OnClickListener
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog -up-|> androidx.fragment.app.DialogFragment
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog_ -up-|> fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog .up.|> android.view.View.OnClickListener
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog -up-|> androidx.fragment.app.DialogFragment
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog_ .up.|> org.androidannotations.api.bean.BeanHolder
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog_ .up.|> org.androidannotations.api.view.HasViews
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog_ .up.|> org.androidannotations.api.view.OnViewChangedListener
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog_ -up-|> fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog
+  fi.delektre.ringa.ring_thesis.util.AppBarTransparentScrollingViewBehavior -up-|> com.google.android.material.appbar.AppBarLayout.ScrollingViewBehavior
+  fi.delektre.ringa.ring_thesis.util.BasicActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.util.FirebasePersistence -up-|> android.app.Application
+  fi.delektre.ringa.ring_thesis.util.RetryWithDelay .up.|> io.reactivex.functions.Function
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,255 @@
+@startuml
+
+title __RING_THESIS's Class Diagram__\n
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.LoginActivity {
+        ~ E_Email : TextInputEditText
+        ~ E_Password : TextInputEditText
+        ~ M1_Player : MediaPlayer
+        ~ T1_View : TextureView
+        ~ createButton : MaterialButton
+        ~ loginButton : MaterialButton
+        ~ mediaPlayerUri : Uri
+        - S1_Surface : Surface
+        {static} - TAG : String
+        - mAuth : FirebaseAuth
+        - mAuthListener : AuthStateListener
+        - mFirebaseDatabase : FirebaseDatabase
+        - mReference : DatabaseReference
+        - userName : String
+        + create()
+        + signing()
+        # onCreate()
+        # onPause()
+        ~ createPressed()
+        ~ initialization()
+        ~ loginPressed()
+        - scaleVideo()
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.MainActivity {
+        {static} + ACCOUNT : String
+        {static} + ACCOUNT_TYPE : String
+        {static} + AUTHORITY : String
+        {static} + SECONDS_PER_MINUTE : Long
+        {static} + SYNC_INTERVAL : Long
+        {static} + SYNC_INTERVAL_IN_MINUTES : Long
+        + lineDataSetBloodPressure : LineDataSet
+        + lineDataSetFluidBalance : LineDataSet
+        + lineDataSetPulse : LineDataSet
+        + lineDataSetTemperature1 : LineDataSet
+        + lineDataSetTemperature2 : LineDataSet
+        + lineDataSetsTemperatures : ArrayList<ILineDataSet>
+        # appBarLayout : AppBarLayout
+        # cardView : CardView
+        # coordinatorLayout : CoordinatorLayout
+        # drawerLayout : DrawerLayout
+        # graphIndex : int
+        # nestedScrollView : NestedScrollView
+        # profilePicture : ImageView
+        # rootLayout : View
+        ~ cardview_main_recyclerholder : CardView
+        ~ lineChart : LineChart
+        ~ recycler_view_graph_options : RecyclerView
+        ~ xaxes : String[]
+        {static} - PERMISSION_REQUEST_ALL : int
+        - REQUEST_ENABLE_BT : int
+        - TAG : String
+        - currentUser : FirebaseUser
+        - defaultProfilePic : StorageReference
+        - mAuth : FirebaseAuth
+        - mAuthStateListener : AuthStateListener
+        - profilePic : StorageReference
+        + fetchData()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        + onPause()
+        # onCreate()
+        # onDestroy()
+        # onResume()
+        # onStop()
+        ~ bindAdapter()
+        ~ buttonTestData()
+        ~ onEnableBTResult()
+        ~ viewsManipulation()
+        - askPermissions()
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.ProfileActivity {
+        {static} ~ REQUEST_IMAGE_CAPTURE : int
+        ~ editProfileButton : ImageView
+        ~ imageFileName : String
+        ~ photoURI : Uri
+        ~ picturePath : String
+        ~ profileBirthday : TextInputEditText
+        ~ profileGender : TextInputEditText
+        ~ profileHeight : TextInputEditText
+        ~ profileHeightLayout : TextInputLayout
+        ~ profileLayout : ConstraintLayout
+        ~ profileName : TextInputEditText
+        ~ profileNameLayout : TextInputLayout
+        ~ profilePicture : ImageView
+        ~ profileSurname : TextInputEditText
+        ~ profileSurnameLayout : TextInputLayout
+        ~ profileWeight : TextInputEditText
+        ~ profileWeightLayout : TextInputLayout
+        {static} ~ userBirthday : String
+        ~ userFirstname : String
+        {static} ~ userGender : String
+        {static} ~ userHeight : String
+        ~ userName : String
+        ~ userSurname : String
+        {static} ~ userWeight : String
+        - UserID : String
+        - currentUser : FirebaseUser
+        - mAuth : FirebaseAuth
+        - mFirebaseDatabase : FirebaseDatabase
+        - mReference : DatabaseReference
+        - profilePictureFile : File
+        - profilePicturePath : File
+        - storageRef : StorageReference
+        - uploadTask : UploadTask
+        - userFolder : StorageReference
+        + clickEditButton()
+        + clickProfileBirthday()
+        + clickProfileGender()
+        + clickProfileHeight()
+        + clickProfileWeight()
+        # onActivityResult()
+        # onCreate()
+        ~ initialization()
+        ~ userBirthdayConversion()
+        - createImageFile()
+        - dispatchTakePictureIntent()
+        - editPicture()
+        - showDatePickerDialog()
+        - showGenderPickerDialog()
+        - showHeightPickerDialog()
+        - showWeightPickerDialog()
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.RecyclerSelectorView {
+        ~ recycler_option_image_view : ImageView
+        ~ recycler_option_label : TextView
+        + RecyclerSelectorView()
+        + bind()
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.SettingsActivity {
+        {static} + PREF_NAME : String
+        - TAG : String
+        - currentUser : FirebaseUser
+        - mAuth : FirebaseAuth
+        - mAuthStateListener : AuthStateListener
+        + clickLogoutButton()
+        # onCreate()
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.UserData {
+        # userFirstname : String
+        {static} ~ REQUEST_IMAGE_CAPTURE : int
+        ~ UserID : String
+        ~ dataCollectionArray : UserDataCollection[]
+        ~ profilePicSetData : ImageView
+        ~ setProfilePicture : TextView
+        ~ userBirthday : String
+        ~ userDataLayout : ConstraintLayout
+        ~ userGender : String
+        ~ userHeight : String
+        ~ userName : String
+        ~ userWeight : String
+        ~ viewPager : ViewPager
+        - currentUser : FirebaseUser
+        - mAge : TextInputEditText
+        - mAuth : FirebaseAuth
+        - mAuthListener : AuthStateListener
+        - mFirebaseDatabase : FirebaseDatabase
+        - mHeight : TextInputEditText
+        - mName : TextInputEditText
+        - mReference : DatabaseReference
+        - mSubmit : Button
+        - mWeight : TextInputEditText
+        + setViewPager()
+        + submitAndFinish()
+        ~ initialization()
+        ~ setupAdapter()
+        - subscribeToUserData()
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    class fi.delektre.ringa.ring_thesis.UserHistory {
+        + dataMonth : LineDataSet
+        + dataToday : LineDataSet
+        + dataWeek : LineDataSet
+        # historyChart : LineChart
+        # tabLayout : TabLayout
+        ~ hourMeasurementsInDay : ArrayList<Integer>[]
+        {static} - TAG : String
+        - UserID : String
+        - currentDayBeginning : long
+        - currentDayEnding : long
+        - currentDayMillis : long
+        - currentDayReference : long
+        - currentUser : FirebaseUser
+        - dailyAverage : int
+        - dayToMillis : long
+        - graphIndex : int
+        - hourlyAverages : int[]
+        - mAuth : FirebaseAuth
+        - mAuthStateListener : AuthStateListener
+        - mFirebaseDatabase : FirebaseDatabase
+        - mReferecence : DatabaseReference
+        - monthToMillis : long
+        - timestampMillis : long
+        - weekToMillis : long
+        + getDailyAverage()
+        + getMonthlyAverages()
+        # onCreate()
+        ~ dataManipulation()
+        ~ selectTabBehavior()
+    }
+  }
+  
+
+  fi.delektre.ringa.ring_thesis.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.MainActivity -up-|> fi.delektre.ringa.ring_thesis.util.BasicActivity
+  fi.delektre.ringa.ring_thesis.MainActivity o-- fi.delektre.ringa.ring_thesis.adapters.SelectorRecyclerViewAdapter : adapter
+  fi.delektre.ringa.ring_thesis.ProfileActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.RecyclerSelectorView -up-|> androidx.appcompat.widget.LinearLayoutCompat
+  fi.delektre.ringa.ring_thesis.SettingsActivity -up-|> android.preference.PreferenceActivity
+  fi.delektre.ringa.ring_thesis.UserData -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserBirthday : userBirthdayCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserGender : userGenderCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserHeight : userHeightCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserName : userNameCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserWeight : userWeighthCollection
+  fi.delektre.ringa.ring_thesis.UserData o-- fi.delektre.ringa.ring_thesis.adapters.SectionStatePagerAdapter : mSectionStateAdapter
+  fi.delektre.ringa.ring_thesis.UserHistory -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

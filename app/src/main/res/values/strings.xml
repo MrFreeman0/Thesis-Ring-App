@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Ring App Thesis</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="label_btn_connect">Connect</string>
+    <string name="label_btn_led">LED Switch</string>
+    <string name="label_text_top">Select a device to get the data from</string>
+    <string name="label_btn_plot">Plot</string>
+    <string name="label_led_indicator">LED indicator</string>
+    <string name="ble_not_supported">This device does not support BLE</string>
+    <string name="text_start_scan">Start scanning</string>
+    <string name="text_stop_scan">Stop scanning</string>
+    <string name="label_btn_close">Close</string>
+
+    <string name="error_bluetooth_not_supported">Bluetooth is not supported on this device!</string>
+
+    <string name="label_btn_reset">Clear bindings</string>
+    <string name="label_btn_accept">Bind selected</string>
+    <string name="label_btn_search">Search</string>
+    <string name="title_ble_devices">Select a RING device to bond with:</string>
+
+    <string name="label_menu_scan">Scan</string>
+    <string name="label_menu_stop">Stop scan</string>
+    <string name="label_menu_refresh">Refresh</string>
+
+    <string name="label_front_page">Front</string>
+    <string name="label_graph_page">Graph</string>
+    <string name="label_about_page">About</string>
+    <string name="label_meter_page">Meter</string>
+    <string name="label_settings_page">Preferences</string>
+
+    <string name="label_resulttext">Eventlog</string>
+
+    <string name="desc_top_meter">Top Meter</string>
+    <string name="desc_bot_meter">Bottom Meter</string>
+    <string name="desc_top_hand">Top Hand</string>
+    <string name="desc_bot_hand">Bottom Hand</string>
+    <string name="desc_knob">Center Knob</string>
+    <string name="desc_sync">Sync status</string>
+    <string name="desc_location">Use location status</string>
+
+    <string name="version_code">Version: 1.1.3</string>
+    <string name="bugs">
+        TODO:\n
+        * No data buffering/transmission from Ring\n
+    </string>
+
+    <string name="label_found_list">Found devices</string>
+
+    <string name="mac_address">Mac: %s</string>
+
+
+    <!-- Main Layout Bottom Sheet/Profile in the future -->
+    <string name="main_bottom_sheet_peek">Some info</string>
+    <string name="main_bottom_sheet_content">Hello, </string>
+    <string name="main_bottom_sheet_username">John</string>
+
+    <!-- User Data Input -->
+
+    <string name="user_first_name_hint">Name</string>
+    <string name="user_age_hint">Age</string>
+    <string name="user_height_hint">Height</string>
+    <string name="user_weight_hint">Weight</string>
+    <string name="label_btn_set_user_data">Submit</string>
+    <string name="label_btn_login">Login</string>
+    <string name="label_btn_create_account">Create</string>
+
+
+    <!-- Drawer Menu Items -->
+    <string name="drawer_dashboard">Dashboard</string>
+    <string name="drawer_history">History</string>
+    <string name="drawer_profile">Profile</string>
+    <string name="drawer_setting">Settings</string>
+    <string name="drawer_activity">Activity</string>
+
+    <!-- Preference Activity Labels -->
+    <string name="label_pref_group_tools">Tools</string>
+    <string name="label_pref_group_pwm">Led PWM Settings</string>
+    <string name="label_pref_group_battery">Battery Settings</string>
+
+    <string name="label_pref_btn_reset">Reset</string>
+    <string name="summary_pref_btn_reset">Reset the Ring device</string>
+    <string name="key_pref_reset_button">key_pref_reset</string>
+
+    <string name="label_pref_btn_calibrate">Calibrate</string>
+    <string name="summary_pref_btn_calibrate">Calibrate the Ring device</string>
+    <string name="key_pref_calibrate_button">key_pref_calibrate</string>
+
+    <string name="label_pref_btn_logout">Logout</string>
+    <string name="summary_pref_btn_logout">Logout to change the user</string>
+    <string name="key_pref_logout_button">key_pref_logout</string>
+
+    <string name="label_pref_btn_reboot">Reboot</string>
+    <string name="summary_pref_btn_reboot">Reboot the Ring device</string>
+    <string name="key_pref_reboot_button">key_pref_reboot</string>
+
+    <string name="label_pref_user_email">Email Address (or other id)</string>
+    <string name="label_pref_battery_saver">Save Battery</string>
+    <string name="label_pref_led_red">LED Red</string>
+    <string name="label_pref_led_green">LED Green</string>
+    <string name="label_pref_led_blue">LED Blue</string>
+    <string name="label_pref_led_yellow">LED Yellow</string>
+    <string name="label_pref_led_nir">LED NIR</string>
+    <string name="label_pref_led_uva">LED UVA</string>
+    <string name="label_pref_led_uvb">LED UVB</string>
+    <string name="label_pref_led_orange">LED Orange</string>
+    <string name="label_enable_sync">Enable Web Sync</string>
+    <string name="label_enable_location">Enable Location Storage</string>
+    <string name="label_change_user">Change Current User</string>
+
+
+        <string-array name="gender_array">
+            <item>Male</item>
+            <item>Female</item>
+        </string-array>
+
+    <string name="default_user_id">nobody@nonetwork.com</string>
+
+    <string name="preference_file_key">fi.delektre.posijava.PREF_FILE_KEY</string>
+
+    <string name="key_led_red">led_red</string>
+    <string name="key_led_green">led_green</string>
+    <string name="key_led_blue">led_blue</string>
+    <string name="key_led_nir">led_nir</string>
+    <string name="key_led_yellow">led_yellow</string>
+    <string name="key_led_uva">led_uva</string>
+    <string name="key_led_uvb">led_uvb</string>
+    <string name="key_led_orange">led_orange</string>
+
+    <string name="key_user_id">user_email</string>
+    <string name="key_enable_sync">enable_sync</string>
+    <string name="key_enable_location">enable_location</string>
+    <string name="key_pref_change_user">change_user</string>
+    <string name="user_weight_string">user_weight</string>
+
+    <string name="create_user_about_user">Personal Information</string>
+    <string name="create_user_user_name">Your name</string>
+    <string name="create_user_user_gender">Gender</string>
+    <string name="create_user_gender_male">Male</string>
+    <string name="create_user_gender_female">Female</string>
+    <string name="create_user_birthday">Your Birthday</string>
+    <string name="create_user_birthday_placeholder">Birthday</string>
+    <string name="create_user_height">Height</string>
+    <string name="create_user_weight">Weight</string>
+
+    <string name="key_ble_name">ble_name</string>
+    <string name="key_ble_addr">ble_address</string>
+
+    <string name="location_permission_required">Location Permission is Required for BLE device usage!</string>
+    <string name="ble_permission_required">Bluetooth permission is required!</string>
+    <string name="internet_permission_required">Internet permission is required!</string>
+    <string name="title_activity_user_data">Set User Info</string>
+
+    <string name="history_tabs_day">Day</string>
+    <string name="history_tabs_week">Week</string>
+    <string name="history_tabs_month">Month</string>
+
+</resources>

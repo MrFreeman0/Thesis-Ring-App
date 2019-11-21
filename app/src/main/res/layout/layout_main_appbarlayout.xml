@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_appbarlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:elevation="0dp"
+    android:fitsSystemWindows="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:background="@drawable/actionbar_layer_list"
+        app:elevation="0dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:titleEnabled="false"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/main_collapisng_layout"
+
+
+        >
+
+        <!--Fix Gravity Issues -->
+        <FrameLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/main_appbarlayout"
+            app:layout_anchorGravity="center_horizontal|bottom"
+            android:layout_gravity="center|bottom">
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:background="@drawable/actionbar_layer_list"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            app:layout_collapseMode="pin">
+            <RelativeLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Senno"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:id="@+id/toolbar_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_senno"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+</com.google.android.material.appbar.AppBarLayout>

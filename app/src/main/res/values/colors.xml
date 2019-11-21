@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f57f17</color>
+    <color name="colorPrimaryDark">#bc5100</color>
+    <color name="colorAccent">#bc5100</color>
+    <color name="colorAppBackground">#5a3422</color>
+    <color name="colorGradientStart">#BDD9BF</color>
+    <color name="colorGradientEnd">#2E4052</color>
+    <color name="colorOuterRingStart">#913E07</color>
+    <color name="colorOuterRingEnd">#D35B00</color>
+    <color name="colorRingMain">#FFC857</color>
+    <color name="colorMeterBackground">#15212D</color>
+    <color name="colorToolbar">#BDD9BF</color>
+    <color name="colorOutline">#15212D</color>
+    <color name="colorBMIBad">#b34527</color>
+    <color name="colorBMIOk">#b3ae27</color>
+    <color name="colorBMIGood">#5db327</color>
+    <color name="mtrl_textinput_default_box_stroke_color">@color/colorPrimary</color>
+
+</resources>

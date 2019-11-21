@@ -1,0 +1,202 @@
+@startuml
+
+title __UTIL's Class Diagram__\n
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.AppBarTransparentScrollingViewBehavior {
+          ~ ctx : Context
+          + AppBarTransparentScrollingViewBehavior()
+          + AppBarTransparentScrollingViewBehavior()
+          + dpToPx()
+          + onDependentViewChanged()
+          - updateOffset()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      abstract class fi.delektre.ringa.ring_thesis.util.BasicActivity {
+          + currentClassName : String
+          + drawerLayout : DrawerLayout
+          + drawerList : NavigationView
+          + drawerToggle : ActionBarDrawerToggle
+          + frameLayout : FrameLayout
+          + toolbar : Toolbar
+          + onConfigurationChanged()
+          + onOptionsItemSelected()
+          + onStart()
+          # onCreateDrawer()
+          # onPostCreate()
+          # onStop()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.ChartUtils {
+          {static} - MAX_ENTRIES : int
+          {static} + removeOutdatedEntries()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.DataType {
+          {static} + BIRTHDAY : int
+          {static} + DataLabel : String[]
+          {static} + GENDER : int
+          {static} + HEIGHT : int
+          {static} + NAME : int
+          {static} + WEIGHT : int
+          - correspondingInt : int
+          + getCorrespondingInt()
+          ~ DataType()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.FirebasePersistence {
+          + onCreate()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.LineDataCollection {
+          - pressure : LineData
+          - temp : LineData
+          + LineDataCollection()
+          + LineDataCollection()
+          + getPressure()
+          + getTemp()
+          + setPressure()
+          + setTemp()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.RetryWithDelay {
+          - maxRetries : int
+          - retryCount : int
+          - retryDelayMillis : int
+          + RetryWithDelay()
+          + apply()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.SelectorOption {
+          + imageDrawableResource : int
+          + optionName : String
+          + SelectorOption()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.UserDataCollection {
+          # dataType : int
+          # userData : String
+          + UserDataCollection()
+          + UserDataCollection()
+          + getDataType()
+          + getUserData()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserBirthday {
+          + UserBirthday()
+          + getDisplayString()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserGender {
+          + UserGender()
+          + getDisplayString()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserHeight {
+          + UserHeight()
+          + getDisplayString()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserName {
+          + UserName()
+          + getDisplayString()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace util {
+      class fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserWeight {
+          + UserWeight()
+          + getDisplayString()
+      }
+    }
+  }
+  
+
+  fi.delektre.ringa.ring_thesis.util.AppBarTransparentScrollingViewBehavior -up-|> com.google.android.material.appbar.AppBarLayout.ScrollingViewBehavior
+  fi.delektre.ringa.ring_thesis.util.BasicActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  fi.delektre.ringa.ring_thesis.util.FirebasePersistence -up-|> android.app.Application
+  fi.delektre.ringa.ring_thesis.util.RetryWithDelay .up.|> io.reactivex.functions.Function
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection +-down- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserBirthday
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection +-down- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserGender
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection +-down- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserHeight
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection +-down- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserName
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection +-down- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserWeight
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserBirthday -up-|> fi.delektre.ringa.ring_thesis.util.UserDataCollection
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserGender -up-|> fi.delektre.ringa.ring_thesis.util.UserDataCollection
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserHeight -up-|> fi.delektre.ringa.ring_thesis.util.UserDataCollection
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserName -up-|> fi.delektre.ringa.ring_thesis.util.UserDataCollection
+  fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserWeight -up-|> fi.delektre.ringa.ring_thesis.util.UserDataCollection
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

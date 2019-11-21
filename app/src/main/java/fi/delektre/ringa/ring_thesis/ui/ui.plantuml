@@ -1,0 +1,206 @@
+@startuml
+
+title __UI's Class Diagram__\n
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment {
+          ~ backButton : MaterialButton
+          ~ createBirthday : TextInputEditText
+          ~ createHeight : TextInputEditText
+          ~ createWeight : TextInputEditText
+          ~ finishButton : MaterialButton
+          ~ userBirthday : String
+          ~ userHeight : String
+          ~ userWeight : String
+          ~ createBackButton()
+          ~ createFinishButton()
+          ~ initialization()
+          ~ pressBirthday()
+          ~ pressHeight()
+          ~ pressWeight()
+          - finishSignup()
+          - showBirthdayPickerDialog()
+          - showHeightPickerDialog()
+          - showWeightPickerDialog()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment {
+          ~ backButton : MaterialButton
+          ~ createFirstName : TextInputEditText
+          ~ createSurname : TextInputEditText
+          ~ femaleButton : RadioButton
+          ~ maleButton : RadioButton
+          ~ nextButton : MaterialButton
+          ~ userFirstname : String
+          ~ userFullname : String
+          ~ userGender : String
+          ~ userSurname : String
+          + onRadioButtonClicked()
+          ~ createBackButton()
+          ~ createNextButton()
+          ~ femaleButtonClicked()
+          ~ initialize()
+          ~ maleButtonClicked()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.DatePickerDialog {
+          ~ acceptButton : ImageView
+          ~ acceptDecline : ImageView
+          ~ calendarView : CalendarView
+          ~ dateInstance : Date
+          ~ dateMonth : TextView
+          ~ dateYear : TextView
+          ~ day : int
+          ~ displayDateFormat : DateFormat
+          ~ displayDateString : String
+          ~ displayYearString : String
+          ~ mCalendar : Calendar
+          ~ mContext : Context
+          ~ month : int
+          ~ newUserBirthdayString : String
+          ~ pickerYear : NumberPicker
+          ~ userBirthdayString : String
+          ~ year : int
+          - currentUser : FirebaseUser
+          - mAuth : FirebaseAuth
+          - mAuthStateListener : AuthStateListener
+          - mFirebaseDatabase : FirebaseDatabase
+          - mReferecence : DatabaseReference
+          + onAttach()
+          + onClick()
+          ~ acceptChanges()
+          ~ changeMonth()
+          ~ changeYear()
+          ~ declineChanges()
+          ~ initialization()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog {
+          ~ acceptButton : ImageView
+          ~ declineButton : ImageView
+          ~ genderPicker : NumberPicker
+          ~ genderPickerVars : String[]
+          ~ userGenderString : String
+          ~ acceptChanges()
+          ~ declineChanges()
+          ~ initialization()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog {
+          ~ acceptButton : ImageView
+          ~ constraintSet : ConstraintSet
+          ~ decimalPicker : NumberPicker
+          ~ declineButton : ImageView
+          ~ heightCmMax : int
+          ~ heightConstraintLayout : ConstraintLayout
+          ~ heightFeetMax : int
+          ~ heightUnits : TextView
+          ~ mainPicker : NumberPicker
+          ~ maxDecimalInches : int
+          ~ measUnit : String
+          ~ unitSwitch : Switch
+          ~ userDecimalHeight : double
+          ~ userHeightMain : double
+          ~ userHeightString : String
+          ~ verticalGuideline : Guideline
+          - currentUser : FirebaseUser
+          - mAuth : FirebaseAuth
+          - mAuthStateListener : AuthStateListener
+          - mFirebaseDatabase : FirebaseDatabase
+          - mReferecence : DatabaseReference
+          + newCheckListener()
+          + onAttach()
+          + onClick()
+          + onCreate()
+          + onCreateView()
+          + viewManipulations()
+          ~ acceptChanges()
+          ~ declineChanges()
+          ~ movingNumberPicker()
+          ~ viewFix()
+      }
+    }
+  }
+  
+
+  namespace fi.delektre.ringa.ring_thesis {
+    namespace ui {
+      class fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog {
+          ~ acceptButton : ImageView
+          ~ decimalPicker : NumberPicker
+          ~ declineButton : ImageView
+          ~ mainPicker : NumberPicker
+          ~ maxDecimal : int
+          ~ measUnit : String
+          ~ unitSwitch : Switch
+          ~ userDecimalWeight : double
+          ~ userWeightMain : double
+          ~ userWeightString : String
+          ~ weightKilos : int[]
+          ~ weightKilosMax : int
+          ~ weightOz : int[]
+          ~ weightPoundMax : int
+          ~ weightPounds : int[]
+          ~ weightUnits : TextView
+          ~ wightGrams : int[]
+          - currentUser : FirebaseUser
+          - mAuth : FirebaseAuth
+          - mAuthStateListener : AuthStateListener
+          - mFirebaseDatabase : FirebaseDatabase
+          - mReferecence : DatabaseReference
+          + newCheckListener()
+          + onAttach()
+          + onClick()
+          + onCreate()
+          + onCreateView()
+          + pickerManipulations()
+          ~ acceptChanges()
+          ~ declineChanges()
+      }
+    }
+  }
+  
+
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment -up-|> androidx.fragment.app.Fragment
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserBirthday : userBirthdayCollection
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserHeight : userHeightCollection
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileDataFragment o-- fi.delektre.ringa.ring_thesis.util.UserDataCollection.UserWeight : userWeigthCollection
+  fi.delektre.ringa.ring_thesis.ui.CreateProfileNameFragment -up-|> androidx.fragment.app.Fragment
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog .up.|> android.view.View.OnClickListener
+  fi.delektre.ringa.ring_thesis.ui.DatePickerDialog -up-|> androidx.fragment.app.DialogFragment
+  fi.delektre.ringa.ring_thesis.ui.GenderPickerDialog -up-|> androidx.fragment.app.DialogFragment
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog .up.|> android.view.View.OnClickListener
+  fi.delektre.ringa.ring_thesis.ui.HeightPickerDialog -up-|> androidx.fragment.app.DialogFragment
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog .up.|> android.view.View.OnClickListener
+  fi.delektre.ringa.ring_thesis.ui.WeightPickerDialog -up-|> androidx.fragment.app.DialogFragment
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

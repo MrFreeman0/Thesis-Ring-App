@@ -1,0 +1,3 @@
+C:/Users/ilayw_000/AndroidStudioProjects/senno_app_thesis/app/.cxx/cmake/debug/x86_64/CMakeFiles/native-lib.dir
+C:/Users/ilayw_000/AndroidStudioProjects/senno_app_thesis/app/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/ilayw_000/AndroidStudioProjects/senno_app_thesis/app/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir

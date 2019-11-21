@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="GraphView">
+        <attr name="graphTitle" format="string" />
+        <attr name="graphBackground" format="color" />
+        <attr name="graphColor" format="color" />
+        <attr name="graphDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>

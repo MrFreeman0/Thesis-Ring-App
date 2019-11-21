@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/meter_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_top_meter"
+        android:src="@drawable/simple_bg"
+        android:visibility="visible"
+        app:srcCompat="@drawable/simple_bg" />
+
+    <ImageView
+        android:id="@+id/meter_tophand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_top_hand"
+        android:rotation="-45"
+        android:src="@drawable/simple_tophand"
+        android:translationZ="1dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/simple_tophand" />
+
+    <ImageView
+        android:id="@+id/meter_bottomhand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_bot_hand"
+        android:rotation="45"
+        android:src="@drawable/simple_bottomhand"
+        android:translationZ="2dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/simple_bottomhand" />
+
+    <ImageView
+        android:id="@+id/meter_knob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_knob"
+        android:src="@drawable/simple_centerknob"
+        android:translationZ="3dp"
+        android:visibility="visible" />
+</FrameLayout>
